@@ -1,12 +1,6 @@
 <?php
 class PhotoManager {
     private $db;
-    public $id;
-    public $description;
-    public $timestamp;
-    public $latitude;
-    public $longitude;
-    public $filepath;
 
     public function __construct($db) {
         $this->db = $db;
