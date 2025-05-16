@@ -25,7 +25,7 @@
         <p><strong>Tags:</strong> <?= htmlspecialchars(implode(', ', $photo['tags'])) ?></p>
 
         <a href="index.php?url=photo/edit/<?= $photo['id'] ?>">Modifier</a> |
-        <a href="index.php?url=photo/delete/<?= $photo['id'] ?>" onclick="return confirm('Supprimer cette photo ?')">Supprimer</a>
+        <a href="index.php?url=photo/delete/<?= $photo['id'] ?>" onclick="return confirm('Voulez-vous supprimer cette photo?')">Supprimer</a>
     <?php else: ?>
         <p>Photo non trouvée.</p>
     <?php endif; ?>
